@@ -6,8 +6,8 @@ public class DoublePendulum{
    private int myY;
    private double length1 = 200;
    private double length2 = 200;
-   private int weight1 = 60;
-   private int weight2 = 60;
+   private int weight1 = 40;
+   private int weight2 = 40;
 
    private double theta1 = Math.PI/2;
    private double theta2 = Math.PI/2;
