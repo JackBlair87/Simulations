@@ -1,0 +1,19 @@
+The max for X is 1400, the max for Y is 700
+Imagine a cordinate plane with 0, 0 as the top left corner and 1400, 700 and the bottom right
+
+---
+9
+
+1 1100 200 
+2 1200 500 
+3 900 600 
+4 400 500 
+5 200 300  
+6 600 300  
+7 900 400  
+8 600 700  
+9 400 100  
+
+
+
+---
