@@ -51,7 +51,7 @@ public class Plane{
       myVelocity = new Point2D.Double(0, 0);
       mySteering = 0.0;
       myAcceleration = 0.0;
-      myAngle = Math.PI/2;
+      myAngle = 0.0;
       
       nextWaypoint = points.getWay(0); //set next waypoint and wind
       wind = new Wind();
