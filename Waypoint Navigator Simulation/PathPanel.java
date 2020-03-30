@@ -18,7 +18,7 @@ public class PathPanel extends JPanel{
       generateRandomWaypoints(10, 1500, 750);
       
       System.out.println(points);
-      plane = new Plane(100, 200, -Math.PI, points); //Start out facing right
+      plane = new Plane(100, 200, 0, points); //Start out facing right
    }
    
    public void begin(){
