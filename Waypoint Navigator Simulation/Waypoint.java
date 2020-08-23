@@ -63,6 +63,15 @@ public class Waypoint{
    }
    
    public void render(Graphics g){
+      Map<?, ?> desktopHints = 
+         (Map<?, ?>) Toolkit.getDefaultToolkit().getDesktopProperty("awt.font.desktophints");
+
+     Graphics2D g2d = (Graphics2D) g;
+     
+     if (desktopHints != null) {
+         g2d.setRenderingHints(desktopHints);
+     }
+     
       g.setColor(myRingColor); //draw exterior boundary
       g.fillOval((int) (myCoordinates.getX()-(myRadius/2)), (int) (myCoordinates.getY()-(myRadius/2)), (int) myRadius, (int) myRadius);
       g.setColor(myCenterColor); //draw darker interior
