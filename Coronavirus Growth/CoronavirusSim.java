@@ -85,6 +85,15 @@ public class CoronavirusSim{
    public void render(Graphics g){
       for(Person p : population)
          p.render(g, (int) (0.75 * distanceBetween));
+
+         Map<?, ?> desktopHints = 
+         (Map<?, ?>) Toolkit.getDefaultToolkit().getDesktopProperty("awt.font.desktophints");
+
+     Graphics2D g2d = (Graphics2D) g;
+     
+     if (desktopHints != null) {
+         g2d.setRenderingHints(desktopHints);
+     }
          
       g.setColor(Color.WHITE);   
       g.setFont(title); 
